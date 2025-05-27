@@ -1,0 +1,24 @@
+{
+  "name": "sa-road-crash-map",
+  "version": "1.0.0",
+  "description": "Interactive map displaying South Australian road crash data from 2019 to 2023",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jameson-dev/sa-road-crash-map.git"
+  },
+  "keywords": ["road-crash", "map", "south-australia", "data-visualization"],
+  "author": "Jameson Bell",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
